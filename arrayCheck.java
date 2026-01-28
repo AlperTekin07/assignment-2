@@ -11,7 +11,7 @@ public class arrayCheck {
         int[] randomArray = new int[arraySize];
 
         for(int i = 0; i < arraySize; i++) {
-            randomArray[i] = Math.floor(Math.random() * 101)
+            randomArray[i] = Math.floor(Math.random() * 101);
         }
     }
 }
