@@ -6,12 +6,12 @@ public class arrayCheck {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter array size: ");
-        int arraySize = input.nextInt()
+        int arraySize = input.nextInt();
         input.nextLine();
         int[] randomArray = new int[arraySize];
 
         for(int i = 0; i < arraySize; i++) {
-            randomArray[i] = Math.floor(Math.random() * 101);
+            randomArray[i] = (int) Math.floor(Math.random() * 101);
         }
     }
 }
