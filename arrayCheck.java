@@ -20,9 +20,10 @@ public class arrayCheck {
 
             System.out.println("\n===== MENU =====");
             System.out.println("1. Display array");
-            System.out.println("2. Find min and max");
-            System.out.println("3. Average and differences");
-            System.out.println("4. Sum of even/odd indexes");
+            System.out.println("2. Find min");
+            System.err.println("3. Find max");
+            System.out.println("4. Average and differences");
+            System.out.println("5. Sum of even/odd indexes");
             System.out.println("0. Exit");
             System.out.print("Choose an option: ");
 
@@ -38,17 +39,31 @@ public class arrayCheck {
 
             } 
             else if(choice == 2){
-                System.out.println("Min/Max not implemented.");
+                int min = 102;
+                for (int i = 0; i < randomArray.length; i++) {
+                    if (randomArray[i] < min) {
+                        min = randomArray[i];
+                    }
+                }
 
+                System.out.println("Minimum integer in array: " + min);
             } 
             else if(choice == 3){
-                System.out.println("Average not implemented.");
+                int max = -1;
+                for (int i = 0; i < randomArray.length; i++) {
+                    if (randomArray[i] > max) {
+                        max = randomArray[i];
+                    }
+                }
 
+                System.out.println("Max integer in array: " + max);
             } 
             else if(choice == 4){
-                System.out.println("Odd/Even index sums not implemented.");
-
+                System.out.println("Average not implemented.");   
             } 
+            else if (choice == 5) {
+                System.out.println("Odd/Even index sums not implemented.");
+            }
             else if(choice == 0){
                 running = false;
                 System.out.println("Exiting program.");
