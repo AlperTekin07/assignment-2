@@ -1,1 +1,3 @@
-ssaasasd
+Simple menu driven array functions
+
+This program has the ability to first create an array of dedicated size then find the averages, minimum and maximum integers in that array and display the array.
