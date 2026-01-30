@@ -37,7 +37,7 @@ public class arrayCheck {
             System.out.println("\n===== MENU =====");
             System.out.println("1. Display array");
             System.out.println("2. Find min");
-            System.err.println("3. Find max");
+            System.out.println("3. Find max");
             System.out.println("4. Average and differences");
             System.out.println("5. Sum of even/odd indexes");
             System.out.println("0. Exit");
