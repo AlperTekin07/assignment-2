@@ -2,6 +2,22 @@ import java.util.Scanner;
 
 public class arrayCheck {
 
+        public static void findOddAndEvenIndexSums(int[] array) {
+        int sumEven = 0;
+        int sumOdd = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if (i % 2 == 0) {
+                sumEven += array[i];
+            } else {
+                sumOdd += array[i];
+            }
+        }
+
+        System.out.println("Sum of elements at even indexes: " + sumEven);
+        System.out.println("Sum of elements at odd indexes: " + sumOdd);
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -71,7 +87,7 @@ public class arrayCheck {
                 } 
             } 
             else if (choice == 5) {
-                System.out.println("Odd/Even index sums not implemented.");
+                findOddAndEvenIndexSums(randomArray);
             }
             else if(choice == 0){
                 running = false;
